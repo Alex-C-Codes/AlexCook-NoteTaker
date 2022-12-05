@@ -10,11 +10,11 @@ notes.get('/', (req, res) => {
 
 // GET Route for a specific note
 notes.get('/:note_id', (req, res) => {
-    const noteID = req.params.note_id;
+    const noteId = req.params.note_id;
     readFromFile('./db/notes.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            const result = json.filter((note) => note.note_id === noteID);
+            const result = json.filter((note) => note.note_id === noteId);
             return result.length > 0
                 ? res.json(result)
                 : res.json('No note with that ID');
@@ -23,7 +23,8 @@ notes.get('/:note_id', (req, res) => {
 
 // DELETE Route for a specific note
 notes.delete('/:note_id', (req, res) => {
-    const noteId = req.params.tip_id;
+    console.info(`${req.method} request recieved for notes`);
+    const noteId = req.params.note_id;
     readFromFile('./db/notes.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
