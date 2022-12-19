@@ -8,4 +8,6 @@ const app = express();
 
 app.use('/notes', notesRouter);
 
+app.use('/notes/:note_id', notesRouter)
+
 module.exports = app;

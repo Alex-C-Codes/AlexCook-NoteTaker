@@ -1,20 +1,12 @@
-# Note Taker Starter Code
+# Note Taker by Alex Cook
 
-GIVEN a note-taking application
-[x] WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-[x] WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-[x] WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-[x] WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-[ ] WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-[??] WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+When the note taker is opened, then the user is presented with a landing page that directs them to a notes page. Once on the notes page, people can create, delete, and store notes. They can also click on an old note to pull up old notes.
 
+This app helps people save and keep track of events to their work day. The current day is displayed at the top of the calendar. People can save their events via the time blocks on the app. Once the save button is selected, the event is saved in local storage and will remain even after the page is refreshed. Moreover, when people view the time blocks for that day, each time block is color-coded to indicate whether it is in the past, present, or future.
 
-## !! Important !!
-[ ] need to be able to delete notes
-[ ] need to be able to access existing notes
+Here is the deployed link to the project: https://alex-c-codes.github.io/AlexCook-WorkDayScheduler/
+ 
+Here is the link to the github repo for the project: https://github.com/Alex-C-Codes/AlexCook-NoteTaker
+
+Here is a screenshot of the project:
+![Alt text](/assets/images/noteTakerScreenshot.png "NoteTaker")
